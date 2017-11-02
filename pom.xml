@@ -14,7 +14,8 @@
 		<module>cloud_service_ribbon</module>
 		<module>cloud_service_feign</module>
 		<module>cloud_service-zuul</module>
-		<module>cloud_config-server</module>
+		<module>cloud_config_server</module>
+        <module>cloud_config_client</module>
 
     </modules>
 
