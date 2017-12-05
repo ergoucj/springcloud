@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/cloud_config_client/cloud_config_client.iml" filepath="$PROJECT_DIR$/cloud_config_client/cloud_config_client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cloud_config_server/cloud_config_server.iml" filepath="$PROJECT_DIR$/cloud_config_server/cloud_config_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_admin/cloud_admin.iml" filepath="$PROJECT_DIR$/cloud_admin/cloud_admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_config/cloud_config.iml" filepath="$PROJECT_DIR$/cloud_config/cloud_config.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_eureka_client/cloud_eureka_client.iml" filepath="$PROJECT_DIR$/cloud_eureka_client/cloud_eureka_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_eureka_server/cloud_eureka_server.iml" filepath="$PROJECT_DIR$/cloud_eureka_server/cloud_eureka_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_service-zuul/cloud_service-zuul.iml" filepath="$PROJECT_DIR$/cloud_service-zuul/cloud_service-zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_service_feign/cloud_service_feign.iml" filepath="$PROJECT_DIR$/cloud_service_feign/cloud_service_feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_service_ribbon/cloud_service_ribbon.iml" filepath="$PROJECT_DIR$/cloud_service_ribbon/cloud_service_ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_sleuth/cloud_sleuth.iml" filepath="$PROJECT_DIR$/cloud_sleuth/cloud_sleuth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_config/config_client/config_client.iml" filepath="$PROJECT_DIR$/cloud_config/config_client/config_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_config/config_server/config_server.iml" filepath="$PROJECT_DIR$/cloud_config/config_server/config_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_sleuth/server_zipkin/server_zipkin.iml" filepath="$PROJECT_DIR$/cloud_sleuth/server_zipkin/server_zipkin.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud.iml" filepath="$PROJECT_DIR$/springcloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_sleuth/zipkin_serverA/zipkin_serverA.iml" filepath="$PROJECT_DIR$/cloud_sleuth/zipkin_serverA/zipkin_serverA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_sleuth/zipkin_serverB/zipkin_serverB.iml" filepath="$PROJECT_DIR$/cloud_sleuth/zipkin_serverB/zipkin_serverB.iml" />
     </modules>
   </component>
 </project>

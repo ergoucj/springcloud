@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/cloud_admin" />
+    <file type="web" url="file://$PROJECT_DIR$/../study" />
+  </component>
+  <component name="Kotlin2JsCompilerArguments">
+    <option name="sourceMapEmbedSources" />
+    <option name="sourceMapPrefix" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud_eureka_client/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud_eureka_server/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud_sleuth/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud_sleuth/server_zipkin/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud_sleuth/cloud_sleuth/server_zipkin/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/cloud_config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/admin/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud_config_client/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud_config_server/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud_sleuth/pom.xml" />
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration>C:\Users\rose\AppData\Roaming\Subversion</configuration>
+  <component name="SvnBranchConfigurationManager">
+    <option name="mySupportsUserInfoFilter" value="true" />
   </component>
 </project>

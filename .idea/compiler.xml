@@ -6,17 +6,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cloud_config_client" />
-        <module name="cloud_config_server" />
+        <module name="admin" />
+        <module name="cloud_admin" />
         <module name="cloud_eureka_client" />
         <module name="cloud_eureka_server" />
         <module name="cloud_service-zuul" />
         <module name="cloud_service_feign" />
         <module name="cloud_service_ribbon" />
+        <module name="config_client" />
+        <module name="config_server" />
+        <module name="server-zipkin" />
+        <module name="server_zipkin" />
+        <module name="zipkin_serverA" />
+        <module name="zipkin_serverA (1)" />
+        <module name="zipkin_serverB" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="cloud_config-server" target="1.8" />
+      <module name="admin" target="1.8" />
+      <module name="cloud_admin" target="1.8" />
+      <module name="cloud_config" target="1.8" />
       <module name="cloud_config_client" target="1.8" />
       <module name="cloud_config_server" target="1.8" />
       <module name="cloud_eureka_client" target="1.8" />
@@ -24,7 +33,16 @@
       <module name="cloud_service-zuul" target="1.8" />
       <module name="cloud_service_feign" target="1.8" />
       <module name="cloud_service_ribbon" target="1.8" />
+      <module name="cloud_sleuth" target="1.8" />
+      <module name="config_client" target="1.8" />
+      <module name="config_server" target="1.8" />
+      <module name="server-zipkin" target="1.8" />
+      <module name="server_zipkin" target="1.8" />
       <module name="springcloud" target="1.8" />
+      <module name="study" target="1.8" />
+      <module name="zipkin_serverA" target="1.8" />
+      <module name="zipkin_serverA (1)" target="1.8" />
+      <module name="zipkin_serverB" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

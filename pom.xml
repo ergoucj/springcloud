@@ -14,8 +14,9 @@
 		<module>cloud_service_ribbon</module>
 		<module>cloud_service_feign</module>
 		<module>cloud_service-zuul</module>
-		<module>cloud_config_server</module>
-        <module>cloud_config_client</module>
+		<module>cloud_admin</module>
+		<module>cloud_config</module>
+		<module>cloud_sleuth</module>
 
     </modules>
 
@@ -23,6 +24,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.8.RELEASE</version>
+		<relativePath />
 	</parent>
 
     <properties>
