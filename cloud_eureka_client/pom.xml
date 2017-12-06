@@ -13,26 +13,11 @@
 	<groupId>com.study.springboot</groupId>
     <artifactId>cloud_eureka_client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+
+    <modules>
+        <module>service_lucy</module>
+        <module>service_hi</module><module>service_turbine</module></modules>
+	<packaging>pom</packaging>
     <description>eureka服务提供者(发现)</description>
 
-        <dependencies>
-
-            <!--服务注册和发现模块-->
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-eureka</artifactId>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-web</artifactId>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-test</artifactId>
-                <scope>test</scope>
-            </dependency>
-
-        </dependencies>
 </project>

@@ -7,7 +7,8 @@ import org.springframework.stereotype.Component;
  * 断路器
  */
 @Component
-public class SchedualServiceHiHystric implements SchedualServiceHi {
+public class SchedualServiceLucyHystric implements SchedualServiceLucy {
+
 
     /**
      * 熔断方法
@@ -15,13 +16,12 @@ public class SchedualServiceHiHystric implements SchedualServiceHi {
      * @return
      */
     @Override
-    public String sayHiFromClientOne(String name) {
+    public String sayLucyFromClientLucy(String name) {
         return "sorry "+name;
     }
 
     @Override
-    public String sayLucyFromClientHIInfo(String name) {
+    public String sayLucyFromClientLucyInfo(String name) {
         return "sorry "+name;
     }
-
 }

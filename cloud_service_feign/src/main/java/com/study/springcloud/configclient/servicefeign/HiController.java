@@ -2,6 +2,7 @@ package com.study.springcloud.configclient.servicefeign;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -27,4 +28,11 @@ public class HiController {
     public String sayHiFromClientOne(@RequestParam String name){
         return schedualServiceHi.sayHiFromClientOne(name);
     }
+
+    @RequestMapping(value = "/infos",method = RequestMethod.GET)
+    public String sayLucyFromClientHIInfo(@RequestParam String name){
+        return schedualServiceHi.sayLucyFromClientHIInfo(name);
+    }
+
+
 }

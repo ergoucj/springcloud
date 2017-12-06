@@ -15,17 +15,18 @@ import org.springframework.web.bind.annotation.RequestParam;
  *
  */
 @Component
-@FeignClient(value = "service-hi",fallback = SchedualServiceHiHystric.class)
-public interface SchedualServiceHi {
+@FeignClient(value = "service-lucy",fallback = SchedualServiceLucyHystric.class)
+public interface SchedualServiceLucy {
 
     /**
-     * 在代码中调用了service-hi服务的“/hi”接口
+     * 在代码中调用了service-lucy服务的“/hi”接口
      * @param name
      * @return
      */
     @RequestMapping(value = "/hi",method = RequestMethod.GET)
-    String sayHiFromClientOne(@RequestParam(value = "name") String name);
+    String sayLucyFromClientLucy(@RequestParam(value = "name") String name);
 
-    @RequestMapping(value = "/infos",method = RequestMethod.GET)
-    String sayLucyFromClientHIInfo(@RequestParam(value = "name") String name);
+    @RequestMapping(value = "/info",method = RequestMethod.GET)
+    String sayLucyFromClientLucyInfo(@RequestParam(value = "name") String name);
+
 }
