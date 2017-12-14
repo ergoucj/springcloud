@@ -8,10 +8,11 @@ import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
+
 /**
  *
- * @author kobe
- * @date 2016/8/19
+ * @author hcj
  * 2个小时刷新token
  */
 @Component
@@ -19,8 +20,11 @@ public class TokenJob {
     private static final Logger logger = LoggerFactory.getLogger(TokenJob.class);
 
     @Async
-    @Scheduled(fixedRate = 7200000)
+//    @Scheduled(fixedRate = 7200000)
+    @Scheduled(cron = "0 0 14 * * ?")
     public void refreshToken() {
+        LocalDate.now();
+        System.out.println(LocalDate.now());
         logger.info("刷新token开始");
         AccessToken accessToken = WxJsUtils.getAccessToken();
     }
