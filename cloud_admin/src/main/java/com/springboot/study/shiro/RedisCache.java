@@ -1,5 +1,6 @@
 package com.springboot.study.shiro;
 
+import com.springboot.study.common.beans.UserSessionConstant;
 import org.apache.shiro.cache.Cache;
 import org.apache.shiro.cache.CacheException;
 import org.slf4j.Logger;
@@ -22,11 +23,11 @@ public class RedisCache<K, V> implements Cache<K, V> {
     private Logger logger;
     private RedisTemplate<K, V> cache;
     private String keyPrefix;
-    private long globExpire = 30;
+    private long globExpire = UserSessionConstant.expireTime;
 
     public RedisCache(RedisTemplate cache) {
         this.logger = LoggerFactory.getLogger(this.getClass());
-        this.keyPrefix = "shiro_redis_session:";
+        this.keyPrefix =  UserSessionConstant.PC_SHIRO_REDIS_SESSION;
         if (cache == null) {
             throw new IllegalArgumentException("Cache argument cannot be null.");
         } else {
@@ -58,7 +59,7 @@ public class RedisCache<K, V> implements Cache<K, V> {
             if (key == null) {
                 return null;
             } else {
-                this.cache.boundValueOps(getCacheKey(key)).expire(globExpire, TimeUnit.MINUTES);
+                this.cache.boundValueOps(getCacheKey(key)).expire(globExpire, TimeUnit.SECONDS);
                 return this.cache.boundValueOps(getCacheKey(key)).get();
 
             }

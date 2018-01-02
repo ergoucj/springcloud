@@ -1,5 +1,6 @@
 package com.springboot.study.shiro;
 
+import com.springboot.study.common.beans.UserSessionConstant;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.session.UnknownSessionException;
 import org.apache.shiro.session.mgt.eis.AbstractSessionDAO;
@@ -28,9 +29,9 @@ public class RedisSessionDAO extends AbstractSessionDAO {
     @Resource
     private RedisTemplate redisTemplate;
 
-    private String keyPrefix = "shiro_redis_session:";
+    private String keyPrefix = UserSessionConstant.PC_SHIRO_REDIS_SESSION;
     //    // session 在redis过期时间是30分钟30*60
-    private static long expireTime = 1800;
+    private static long expireTime = UserSessionConstant.expireTime;
 
     public RedisSessionDAO() {
     }
@@ -47,7 +48,7 @@ public class RedisSessionDAO extends AbstractSessionDAO {
     private void saveSession(Session session) throws UnknownSessionException {
         logger.debug("创建session");
         if (session != null && session.getId() != null) {
-            session.setTimeout((long) (expireTime*1000));
+//            session.setTimeout((long) (expireTime*1000));
             String key = keyPrefix + session.getId().toString();
             redisTemplate.opsForValue().set(key , session);
             redisTemplate.expire(key, expireTime, TimeUnit.SECONDS);

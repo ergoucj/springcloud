@@ -93,6 +93,8 @@ public class ShiroConfiguration {
         //拦截器.
         Map<String, String> filterChainDefinitionManager = new LinkedHashMap<>();
         //配置退出 过滤器,其中的具体的退出代码Shiro已经替我们实现了
+        // 允许用户匿名访问/login(登录接口)
+        filterChainDefinitionManager.put("/login", "anon");
         filterChainDefinitionManager.put("/logout", "logout");
         filterChainDefinitionManager.put("/css/**","anon");
         filterChainDefinitionManager.put("/js/**","anon");

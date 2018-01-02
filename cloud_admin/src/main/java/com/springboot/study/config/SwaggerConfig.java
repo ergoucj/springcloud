@@ -2,6 +2,8 @@ package com.springboot.study.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -50,7 +52,7 @@ http://blog.csdn.net/u012476983/article/details/54090423
  */
 @Configuration
 @EnableSwagger2
-public class SwaggerConfig {
+public class SwaggerConfig extends WebMvcConfigurerAdapter {
 
     @Bean
     public Docket createRestApi() {
@@ -70,6 +72,15 @@ public class SwaggerConfig {
                 .contact("程序猿DD")
                 .version("1.0")
                 .build();
+    }
+
+    /**
+     * swagger-ui.html路径映射，浏览器中使用/api-docs访问
+     * @param registry
+     */
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        registry.addRedirectViewController("/api-docs","/swagger-ui.html");
     }
 
 }
