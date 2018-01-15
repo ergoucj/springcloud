@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>index</title>
+</head>
+
+<body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
+
+</body>
+<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script  th:src="@{/js/jquery-3.0.0.min.js}"></script>
+<script>
+    var timestamp;
+    var noncestr;
+    var signature;
+    var appid;
+    //获取签名
+    /*$.ajax({
+        type: "post",
+        url: "/getWxConfig",
+        data:{"url":location.href.split('#')[0]},
+        success: function (data) {
+            console.log(data.data.timestamp);
+            timestamp = data.data.timestamp;
+            noncestr = data.data.noncestr;
+            signature = data.data.signature;
+            appid = data.data.appId;
+            wxShare();
+        }
+    });
+*/
+    function wxShare() {
+        wx.config({
+            debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+            appId: appid, // 和获取Ticke的必须一样------必填，公众号的唯一标识
+            timestamp: timestamp, // 必填，生成签名的时间戳
+            nonceStr: noncestr, // 必填，生成签名的随机串
+            signature: signature,// 必填，签名，见附录1
+            jsApiList: ['hideMenuItems','onMenuShareTimeline', 'onMenuShareAppMessage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2/ 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+        });
+
+        wx.ready(function () {
+            //批量隐藏功能按钮接口
+            wx.hideMenuItems({
+                menuList: [
+                    "menuItem:copyUrl",//复制链接
+                    "menuItem:share:qq",//分享到QQ
+                    "menuItem:share:weiboApp",//分享到Weibo
+                    "menuItem:favorite",//收藏
+                    "menuItem:share:facebook",//分享到FB
+                    "menuItem:share:QZone",//分享到 QQ 空间
+                    "menuItem:openWithQQBrowser", //在QQ浏览器中打开
+                    "menuItem:openWithSafari",//在Safari中打开
+                    "menuItem:share:email",//邮件
+                    "menuItem:share:brand"//一些特殊公众号
+                ] // 要隐藏的菜单项，只能隐藏“传播类”和“保护类”按钮，所有menu项见附录3
+            });
+
+            wx.onMenuShareTimeline({
+                title: '哈哈哈！', // 分享标题
+                link: 'www.baidu.com', // 分享链接
+                // link: 'http://image.szqd.e2capp.com/upload/filesystem/appserver/wehcat/b9b51c4f-0143-4b04-80cb-c1c82e967707.jpg', // 分享链接
+                imgUrl: 'http://smart-dial.szqd.e2capp.com/upload/filesystem/appserver/wehcat/image/18cb7e42-2218-4cb2-97a4-f7076f6cb706.jpg', // 分享图标
+                success: function () {
+                    alert("分享成功");
+                    console.log(filepath)
+                    // 用户确认分享后执行的回调函数
+                },
+                cancel: function () {
+                    // 用户取消分享后执行的回调函数
+                }
+            });
+
+            wx.onMenuShareAppMessage({
+                title: '哈哈哈！', // 分享标题
+                link: 'www.baidu.com', // 分享链接
+                // link: 'http://image.szqd.e2capp.com/upload/filesystem/appserver/wehcat/b9b51c4f-0143-4b04-80cb-c1c82e967707.jpg', // 分享链接
+                imgUrl: 'http://smart-dial.szqd.e2capp.com/upload/filesystem/appserver/wehcat/image/18cb7e42-2218-4cb2-97a4-f7076f6cb706.jpg', // 分享图标
+                success: function () {
+                    alert("分享成功");
+                    console.log(filepath)
+                    // 用户确认分享后执行的回调函数
+                },
+                cancel: function () {
+                    // 用户取消分享后执行的回调函数
+                }
+            });
+            //config信息验证后会执行ready方法，所有接口调用都必须在config接口获得结果之后，config是一个客户端的异步操作，所以如果需要在页面加载时就调用相关接口，则须把相关接口放在ready函数中调用来确保正确执行。对于用户触发时才调用的接口，则可以直接调用，不需要放在ready函数中。
+        });
+    }
+
+</script>
+</html>

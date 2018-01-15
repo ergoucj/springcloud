@@ -6,8 +6,7 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageInfo;
 import com.springboot.study.common.beans.EasyUIDataGrideResult;
 import com.springboot.study.common.beans.PageResultBean;
-import com.springboot.study.util.NetWorkHelper;
-import com.springboot.study.util.WxJsUtils;
+import com.springboot.study.xxxcommons.util.NetWorkHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,11 +24,14 @@ public class BaseController {
     private final Logger log = LoggerFactory.getLogger(BaseController.class);
     protected final static NetWorkHelper NET_WORK_HELPER = new NetWorkHelper();
 
-    /**
+/*
+    */
+/**
      * 第一步通过当前url 获取微信openid
      *
      * @return
-     */
+     *//*
+
     public String reGetOpenId(HttpServletRequest request, HttpServletResponse response) {
         //获取当前url
         String url = request.getRequestURL().toString();
@@ -62,12 +64,14 @@ public class BaseController {
         return openid;
     }
 
-    /**
+    */
+/**
      * 获取code跳转地址
      *
      * @param url
      * @return
-     */
+     *//*
+
     public String getCodeUrl(String url) {
         String codeUrl = "";
         //对回调url进行编码
@@ -82,12 +86,14 @@ public class BaseController {
 
     }
 
-    /**
+    */
+/**
      * 第二步 获取openid
      *
      * @param code
      * @return
-     */
+     *//*
+
     public String getOauthAccessOpenId(String code) {
         String openid = "";
         String url = "https://api.weixin.qq.com/sns/oauth2/access_token?appid="+WxJsUtils.getAPPID()+"&secret="+WxJsUtils.getSecret()+"&code=" + code + "&grant_type=authorization_code";
@@ -103,6 +109,7 @@ public class BaseController {
 
         return openid;
     }
+*/
 
     /**
      * 转换为普通分页对象

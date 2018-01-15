@@ -1,7 +1,6 @@
 package com.springboot.study.controller;
 
 import com.springboot.study.common.beans.ResultBean;
-import com.springboot.study.util.WxJsUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,7 +15,7 @@ import java.util.UUID;
 @RestController
 public class WechatController {
 
-    @RequestMapping("/getWxConfig")
+/*    @RequestMapping("/getWxConfig")
     public ResultBean getWxConfig(ServletRequest request) {
         String jsapiTicket;
         //获取Unix时间戳
@@ -45,5 +44,5 @@ public class WechatController {
         //传入对应的appId
         params.put("appId", WxJsUtils.getAPPID());
         return new ResultBean(params);
-    }
+    }*/
 }

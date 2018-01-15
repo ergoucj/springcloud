@@ -1,5 +1,6 @@
 package com.springboot.study;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
@@ -17,6 +18,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableScheduling
 @EnableSwagger2
 @ServletComponentScan
+@MapperScan(basePackages="com.springboot.study.mapper")
 public class StudyApplication {
 
 	public static void main(String[] args) {
