@@ -17,6 +17,12 @@
 		<module>cloud_admin</module>
 		<module>cloud_config</module>
 		<module>cloud_sleuth</module>
+		<module>xxx-commons</module>
+		<module>xxx-entity</module>
+		<module>xxx-core</module>
+		<module>xxx-service</module>
+		<module>xxx-mapper</module>
+
 
     </modules>
 
@@ -52,6 +58,14 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+		<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.18.1</version>
+                <configuration>
+                  <skipTests>true</skipTests>
+                </configuration>
+             </plugin>
 		</plugins>
 	</build>
 
