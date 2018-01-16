@@ -1,0 +1,42 @@
+POST http://localhost:8881/bus/refresh
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+POST http://localhost:8881/bus/refresh
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+POST http://localhost:8881/bus/refresh
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+POST http://localhost:8881/bus/refresh
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+POST http://localhost:8881/bus/refresh
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+POST http://localhost:8881/bus/refresh
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+POST http://localhost:8881/bus/refresh
+Accept:*/*
+Cache-Control:no-cache
+
+###
+

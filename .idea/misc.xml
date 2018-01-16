@@ -17,6 +17,11 @@
         <option value="$PROJECT_DIR$/cloud_sleuth/pom.xml" />
         <option value="$PROJECT_DIR$/cloud_sleuth/server_zipkin/pom.xml" />
         <option value="$PROJECT_DIR$/cloud_sleuth/cloud_sleuth/server_zipkin/pom.xml" />
+        <option value="$PROJECT_DIR$/xxx-service/pom.xml" />
+        <option value="$PROJECT_DIR$/xxx-mapper/pom.xml" />
+        <option value="$PROJECT_DIR$/xxx-entity/pom.xml" />
+        <option value="$PROJECT_DIR$/xxx-core/pom.xml" />
+        <option value="$PROJECT_DIR$/xxx-commons/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

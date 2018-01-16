@@ -13,7 +13,16 @@
       <module fileurl="file://$PROJECT_DIR$/cloud_config/config_client/config_client.iml" filepath="$PROJECT_DIR$/cloud_config/config_client/config_client.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_config/config_server/config_server.iml" filepath="$PROJECT_DIR$/cloud_config/config_server/config_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_sleuth/server_zipkin/server_zipkin.iml" filepath="$PROJECT_DIR$/cloud_sleuth/server_zipkin/server_zipkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_eureka_client/service_hi/service_hi.iml" filepath="$PROJECT_DIR$/cloud_eureka_client/service_hi/service_hi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_eureka_client/service_lucy/service_lucy.iml" filepath="$PROJECT_DIR$/cloud_eureka_client/service_lucy/service_lucy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_eureka_client/service_turbine/service_turbine.iml" filepath="$PROJECT_DIR$/cloud_eureka_client/service_turbine/service_turbine.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud.iml" filepath="$PROJECT_DIR$/springcloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../springcloudconfig/springcloudconfig.iml" filepath="$PROJECT_DIR$/../../springcloudconfig/springcloudconfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xxx-commons/xxx-commons.iml" filepath="$PROJECT_DIR$/xxx-commons/xxx-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xxx-core/xxx-core.iml" filepath="$PROJECT_DIR$/xxx-core/xxx-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xxx-entity/xxx-entity.iml" filepath="$PROJECT_DIR$/xxx-entity/xxx-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xxx-mapper/xxx-mapper.iml" filepath="$PROJECT_DIR$/xxx-mapper/xxx-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xxx-service/xxx-service.iml" filepath="$PROJECT_DIR$/xxx-service/xxx-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_sleuth/zipkin_serverA/zipkin_serverA.iml" filepath="$PROJECT_DIR$/cloud_sleuth/zipkin_serverA/zipkin_serverA.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_sleuth/zipkin_serverB/zipkin_serverB.iml" filepath="$PROJECT_DIR$/cloud_sleuth/zipkin_serverB/zipkin_serverB.iml" />
     </modules>

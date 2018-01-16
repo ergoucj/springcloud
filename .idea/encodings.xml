@@ -7,16 +7,22 @@
     <file url="file://$PROJECT_DIR$/cloud_config/config_client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_config/config_server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_eureka_client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_eureka_client/service_hi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_eureka_client/service_lucy" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_eureka_client/service_turbine" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_eureka_server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_service-zuul" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_service_feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_service_ribbon" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_sleuth" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_sleuth/server_zipkin" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud_sleuth/server_zipkin" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud_sleuth/server_zipkin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_sleuth/zipkin_serverA" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_sleuth/zipkin_serverB" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxx-commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxx-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxx-entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxx-mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxx-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../study" charset="UTF-8" />
   </component>
 </project>
